@@ -5,19 +5,18 @@
       
       {% for image in attach %}
           {% if image._id.startswith(prefix+"000") %}
-          <a class="w-36 lg:w-80 " href="{{ 'https://voco.rover.de/wp-content/uploads/sites/14/2022/08/' + image._id|url }}" data-pswp-width="{{ image.width }}"
+          <a class="w-36 lg:w-80 " href="{{ 'https://voco.rover.de/' + image._id|url }}" data-pswp-width="{{ image.width }}"
               data-pswp-height="{{ image.height }}" target="_blank">
-              <img src="{{ 'https://voco.rover.de/wp-content/uploads/sites/14/2022/08/' +image.thumbnail(320)|url }}" alt=""
+              <img src="{{ 'https://voco.rover.de/' +image.thumbnail(320)|url }}" alt=""
                   class="object-cover w-full h-full align-middle"></img>
           </a>
-
           {% endif %}
       {% endfor %}
-      
+      {{"static/output.css" | url}}
       <script type="module">
-        import PhotoSwipeLightbox from 'https://unpkg.com/photoswipe/dist/photoswipe-lightbox.esm.js';
-        import PhotoSwipe from 'https://unpkg.com/photoswipe/dist/photoswipe.esm.js';
-
+        import PhotoSwipeLightbox from './{{"static/photoswipe/dist/photoswipe-lightbox.esm.js"|url}}';
+        import PhotoSwipe from './{{"static/photoswipe/dist/photoswipe.esm.js"|url}}';
+        
         const lightbox = new PhotoSwipeLightbox({
             gallery: '#{{prefix}}',
             children: 'a',
