@@ -1,0 +1,429 @@
+{% extends "layout.html" %}
+{% import 'macros/render_gallery.html' as render_gallery %}
+
+{% block title %}{{ this.title }}{% endblock %}
+
+{% block body %}
+
+<div class="flex flex-col items-center overflow-hidden">
+
+    <div class="relative w-full">
+
+        <!--<img src="{{ '/static/graphics/swoosh.png'|url }}"
+            class="absolute inset-0 z-20 block object-cover object-center w-full h-auto m-auto "></img>-->
+
+        <div class="relative mx-auto overflow-visible max-w-ws lg:max-w-lg">
+
+            <img src="https://voco.rover.de/wp-content/uploads/sites/14/2022/08/opener_background-1.png"
+                class="relative inset-0 z-10 p-8 "></img>
+            <img src="https://voco.rover.de/wp-content/uploads/sites/14/2022/08/RV_logo_horizontal_hellblau_ohne_relief.png"
+                class="absolute inset-x-0 z-30 p-8 top-20 w-288"></img>
+            <img src="https://voco.rover.de/wp-content/uploads/sites/14/2022/08/opener_forground-1.png"
+                class="absolute inset-0 z-40 p-8 "></img>
+
+        </div>
+    </div>
+
+
+    <div class="container flex items-center justify-center pt-8 pb-8">
+        <div class="relative w-full h-auto prose-sm prose lg:prose-lg">
+            <h1>Das war roverVOCO</h1>
+
+            <h2>8 Tage unterwegs mit 1100 Rover*innen und 150 Helfer*innen</h2>
+
+            <p>Seit 2013 gab es kein bundesweites Lager für alle Rover*innen mehr. Nach &#8220;<a class="autolink"
+                    href="https://rover.de">rover.de</a>&#8221; war es dieses Jahr endlich wieder
+                soweit! 1100
+                Rover*innen haben acht Tage lang Deutschland und die Pfadfinderei auf eine andere und neue Art und Weise
+                kennengelernt.</p>
+
+            <img src="https://voco.rover.de/wp-content/uploads/sites/14/2022/08/Lilie.png"
+                class="absolute object-center w-64 h-auto m-auto -rotate-12 -left-20 -z-10 -bottom-32 object-fit "></img>
+        </div>
+    </div>
+
+    <div class="w-full aspect-w-16 aspect-h-9 bg-slate-900">
+        <iframe class="z-10 max-w-full" src="https://www.youtube.com/embed/GeYDUeBiPoY" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+    </div>
+
+    <div class="container flex items-center justify-center py-8 overflow-visible">
+        <div class="relative w-full h-auto prose-sm prose lg:prose-lg">
+            <h1>Die Auftakte</h1>
+
+            <p>Los ging es mit vier, über Deutschland verteilten, Auftaktveranstaltungen. In Absberg, Eggerode,
+                Heidelberg und Rüthen kamen die Runden der jeweiligen Regionen <sup><a href="#fn1-15228" id="fnr1-15228"
+                        title="siehe Fußnote" class="footnote">1</a></sup> zu einem ersten kennenlernen
+                und der
+                gemeinsamen, interaktiven Livestream-Eröffnungsfeier zusammen.</p>
+            <div class="footnotes">
+
+                <ol>
+                    <li id="fn1-15228">
+                        <p> Der Bundesverband ist in <a href="https://www.scout-o-wiki.de/index.php/Region#DPSG"
+                                target="_blank">vier
+                                Regionen</a> aufgeteilt deren Diözesanverbände verstärkt zusammenarbeiten <a
+                                href="#fnr1-15228" title="return to article" class="reversefootnote">&#8617;&#xFE0E;</a>
+                        </p>
+                    </li>
+                </ol>
+            </div>
+
+            <img src="https://voco.rover.de/wp-content/uploads/sites/14/2022/08/RV_bubble_hellblau_ohne_relief.png"
+                class="absolute top-0 object-center h-auto m-auto -z-10 -right-144 w-144 object-fit "></img>
+
+
+        </div>
+    </div>
+
+    {{render_gallery.render_gallery('auftakte', this.attachments.images)}}
+
+
+    <div class="container relative flex items-center justify-center py-8 overflow-visible">
+
+
+        <div class="relative w-full h-auto prose-sm prose lg:prose-lg">
+
+            <h1>Der Aufbau</h1>
+
+            <p>Der <a href="https://www.ziegeleipark.de" target="_blank">Ziegeleipark in Mildenberg</a>, eine alte
+                Ziegelei und
+                heute ein
+                (freiluft) Industriemuseum, wurde währenddessen für das gemeinsame Abschlusslager vorbereitet.
+                Auf dem Gelände des Industriemuseums wurde die notwendige Infrastruktur wie Sanitäranlagen und
+                Stromversorgung aufgebaut, eine Kneipenstraße und die Bühne errichtet sowie das Programm vorbereitet.
+            </p>
+
+            <img src="https://voco.rover.de/wp-content/uploads/sites/14/2022/08/aufbau00007.png"
+                class="absolute object-center h-auto m-auto -left-96 -bottom-5 w-96 object-fit "></img>
+
+        </div>
+
+
+
+    </div>
+
+    {{render_gallery.render_gallery('aufbau', this.attachments.images)}}
+
+    <div class="container flex items-center justify-center py-8 overflow-vissible">
+        <div class="relative w-full h-auto prose-sm prose lg:prose-lg">
+
+            <h1>Die Projektphase</h1>
+
+            <p>In kleinen Gruppen ging es anschließend mit dem Nahverkehr (lange bevor das 9€ Ticket Thema war 😉) quer
+                durch Deutschland. Am Ziel der Reise wartete eins von 42 verschiedenen Projekten auf die Rover*innen:
+            </p>
+
+            <ul>
+                <li>Schaulager Förderschüler*innen Wiesbaden mit der <a
+                        href="https://www.wiesbaden.de/vv/oe/06/51/141010100000005983.php" target="_blank">Sozialarbeit
+                        Wiesbaden</a>
+                </li>
+                <li>&quot;Gute Arbeit“ – Demokratie in der Arbeitswelt. Ein Workcamp und Übertragung auf die reale
+                    Arbeitswelt mit dem <a href="https://www.berlin.arbeitundleben.de/" target="_blank">Verein Arbeit
+                        und Leben Berlin
+                        Brandenburg e.V.</a></li>
+                <li>Sag mir, wo die Mauer stand mit dem <a href="https://www.berlin.arbeitundleben.de/"
+                        target="_blank">Verein Arbeit
+                        und Leben Berlin Brandenburg e.V.</a></li>
+                <li>Interreligiöse Schnitzeljagd durch Berlin mit dem <a
+                        href="http://direkiju.de/sie-haben-ihr-ziel-erreicht-interreligioese-schnitzeljagd-mit-pfadfinderinnen/"
+                        target="_blank">Berliner
+                        Forum der Religionen</a></li>
+                <li>Demokratielabor mit der <a href="https://www.fes.de" target="_blank">Friedrich-Ebert-Stiftung</a>
+                </li>
+                <li>Warum politisches und gesellschaftliches Engagement von Jugendlichen und für Jugendliche so eminent
+                    wichtig ist? Kreativworkshops der <a href="https://www.kas.de/de/home"
+                        target="_blank">Konrad-Adenauer-Stiftung</a>
+                </li>
+                <li>Stammtischkämpfer*innen, Seminar und Teamendenschulung vom Projekt <a
+                        href="https://www.aufstehen-gegen-rassismus.de/" target="_blank">Aufstehen gegen Rassismus</a>
+                </li>
+                <li>Hochbeetbau + Graffitiworkshop mit dem <a href="http://www.batenbrock.de/"
+                        target="_blank">Stadtteilbüro
+                        Batenbrock</a></li>
+                <li><a href="https://www.kz-gedenkstaette-neuengamme.de/" target="_blank">Gedenkstätte Neuengamme</a>
+                </li>
+                <li><a href="https://www.stiftung-hsh.de/G" target="_blank">Gedenkstätte Berlin-Hohenschönhausen</a>
+                </li>
+                <li><a href="https://www.sachsenhausen-sbg.de/" target="_blank">Gedenkstätte Sachsenhausen</a></li>
+                <li><a href="https://www.bonn.de/microsite/gedenkstaette/index.php" target="_blank">Gedenkstätte
+                        Bonn</a></li>
+                <li>Gemeinderatsplanspiel, Toledo, Jugendbeteiligung des <a href="https://sjr-mannheim.de/"
+                        target="_blank">Stadtjugendrings Mannheim</a></li>
+                <li>Jüdischen Glauben erleben bei der <a href="http://www.synagoge-michelbach-luecke.de/"
+                        target="_blank">Synagoge
+                        Michelbach/Lücke</a></li>
+                <li>Klimawandel und Klimagerechtigkeit mit <a href="https://www.arbeitundleben-thueringen.de/"
+                        target="_blank">Arbeit
+                        und Leben Thüringen</a></li>
+                <li>Glück und Konsum mit <a href="https://www.arbeitundleben-thueringen.de/" target="_blank">Arbeit und
+                        Leben
+                        Thüringen</a></li>
+                <li>Future Fashion + Engagement in Osteuropa mit <a href="https://act4transformation.net/en/"
+                        target="_blank">act for
+                        transformation gem.eG</a></li>
+                <li>Nachhaltige Stadtführung, Karma, Klima &amp; Karriere mit dem <a
+                        href="https://www.wir-ernten-was-wir-saeen.de/" target="_blank">Kommunikationsbüro Stuttgart</a>
+                </li>
+                <li><a href="https://correctiv.org/" target="_blank">Jugendredaktion Correktiv</a></li>
+                <li>Water of the Future ein Projekt von finep - <a href="https://finep.org/en/" target="_blank">Forum
+                        für internationale
+                        Entwicklung und Planung</a></li>
+                <li>Widerstand während des NS ein Projekt der <a href="https://www.gdw-berlin.de/home/"
+                        target="_blank">Stiftung
+                        Gedenktstätten deutscher Widerstand</a></li>
+                <li><a href="https://teamglobal.de/">Team Global</a> und <a href="https://www.eine-welt-forum.de/"
+                        target="_blank">Eine
+                        Welt Forum</a></li>
+                <li>Biografiearbeit Jugendliche während der NS-Zeit ein Projekt der <a
+                        href="https://www.duesseldorf.de/mahn-und-gedenkstaette.html" target="_blank">Gedenkstätte
+                        Düsseldorf</a></li>
+                <li><a href="https://www.utopieundalltag.de/en/" target="_blank">Museum Utopie und Alltag</a></li>
+                <li><a href="https://www.bahnhofsmission-bremen.de/" target="_blank">Bahnhofsmission Bremen</a></li>
+                <li>“Fakenews, Social Media und so…&quot; ein Projekt des <a
+                        href="https://www.internationaler-bund.de/standort/211544" target="_blank">IB Mainz</a></li>
+                <li>Politik in Berlin ein Projekt von uns</li>
+                <li>Spree Clean Up ein Projekt von uns</li>
+                <li><a href="https://www.buchenwald.de/29/" target="_blank">Gedenkstätte Dora</a></li>
+                <li>Hike im Osten ein Projekt von uns</li>
+                <li>Zufallshike ein Projekt von uns</li>
+                <li>Bullitour durch den Osten ein Projekt der Roverrunde</li>
+                <li>Bergwaldprojekt ein Projekt der Roverrunde</li>
+                <li>…</li>
+            </ul>
+
+            <p>Am Anreisetag Montag blieb genügend Zeit um die neuen Roverrunden kennenzulernen und sich in der
+                Unterkunft einzurichten.</p>
+
+            <p>Dienstag und Mittwoch waren für die Projekte und dem ersten Hauch von Lageralltag gewidmet, bevor es
+                Donnerstags wieder mit der Bahn weiterging.</p>
+
+            <img src="https://voco.rover.de/wp-content/uploads/sites/14/2022/08/projekt00011.png"
+                class="absolute object-center h-auto m-auto -z-10 -left-80 top-56 w-144 object-fit "></img>
+
+            <img src="https://voco.rover.de/wp-content/uploads/sites/14/2022/08/RV_bubble_rot_ohne_relief.png"
+                class="absolute object-center h-auto m-auto -translate-x-12 top-24 -z-10 -left-96 w-96 object-fit -scale-x-1"></img>
+
+            <img src="https://voco.rover.de/wp-content/uploads/sites/14/2022/08/RV_bubble_hellrot_ohne_relief.png"
+                class="absolute object-center h-auto m-auto -translate-x-8 bottom-56 -z-10 -left-80 w-80 object-fit -scale-x-1"></img>
+
+            <img src="https://voco.rover.de/wp-content/uploads/sites/14/2022/08/RV_bubble_dunkelblau_ohne_relief.png"
+                class="absolute object-center w-56 h-auto m-auto top-80 -z-10 -right-56 object-fit scale-x-1"></img>
+
+            <img src="https://voco.rover.de/wp-content/uploads/sites/14/2022/08/RV_bubble_dunkelgelb_ohne_relief.png"
+                class="absolute object-center h-auto m-auto w-72 bottom-144 -z-10 -right-72 object-fit scale-x-1"></img>
+
+
+
+        </div>
+
+
+    </div>
+
+    {{render_gallery.render_gallery('projekt', this.attachments.images)}}
+
+    <div class="container flex items-center justify-center py-8 overflow-visible">
+        <div class="relative w-full h-auto prose-sm prose lg:prose-lg">
+            <h1>Der Donnerstag</h1>
+
+            <p>Den ganzen Tag und bis in die Nacht hinein kamen die einzelnen Projektgruppen mit Bus und Bahn im
+                Ziegeleipark in Mildenberg an und bauten ihre Zeltdörfer auf.</p>
+
+            <p>Mit einer großen Willkommensfeier sind wir in die zweite Hälfte des Lagers gestartet - Das Abschlusslager
+                beginnt!</p>
+
+            <img src="https://voco.rover.de/wp-content/uploads/sites/14/2022/08/RV_bubble_pink_ohne_relief.png"
+                class="absolute object-center h-auto m-auto -translate-x-5 -top-20 -z-10 -left-144 w-144 object-fit -scale-x-1"></img>
+
+
+        </div>
+    </div>
+
+    {{render_gallery.render_gallery('donnerstag', this.attachments.images)}}
+
+    <div class="container flex items-center justify-center py-8 overflow-visible">
+        <div class="relative w-full h-auto prose-sm prose lg:prose-lg">
+
+            <h1>Der Freitag</h1>
+
+            <p>Die Rover*innen haben in den Projekten viel erlebt. Um das Erlebte Revue passieren zu lassen und
+                Erkenntnisse für die Zukunft daraus zu entwickeln gab es am Freitag zunächst Zeit für eine
+                Gruppenreflexion in den Projektgruppen.<br />
+                Aufgabe war es ein Ausstellungsstück anzufertigen, welches die Erlebnisse und das Gelernte der letzten
+                Tage repräsentieren soll. </p>
+
+            <p>Im Rahmen einer großen Vernissage wurden die Kunstwerke daraufhin glamourös in Szene gesetzt.</p>
+
+            <img src="https://voco.rover.de/wp-content/uploads/sites/14/2022/08/freitag00003.png"
+                class="absolute object-center h-auto m-auto -z-10 -right-80 -top-5 w-96 object-fit "></img>
+
+
+        </div>
+    </div>
+
+    {{render_gallery.render_gallery('freitag', this.attachments.images)}}
+
+    <div class="container flex items-center justify-center py-8 overflow-visible">
+        <div class="relative w-full h-auto prose-sm prose lg:prose-lg">
+
+            <h1>Der Samstag</h1>
+
+            <p>Den gesamten Ostersamstag über gab es Workshops und Angebote zu unterschiedlichsten Themen:</p>
+
+            <ul>
+                <li>Die kolonialen Wurzeln der Pfadfinder*innenbewegung mit Joel Schmitt</li>
+                <li>Sucht mit Nadira Metzner</li>
+                <li>Poetry Slam mit <a href="https://slampool.de/kuenstler/nik-salsflausen/" target="_blank">Nik
+                        Salsflausen</a></li>
+                <li>Engagement und Empowerment damals und heute mit der <a href="www.fes.de"
+                        target="_blank">Friedrich-Ebert-Stiftung</a></li>
+                <li>Kulturen erleben mit Dr. Moira Zuazo</li>
+                <li><a href="https://www.dkms.de" target="_blank">DKMS</a></li>
+                <li>&#8220;Wie funktioniert die EU?&#8221; mit der <a href="https://www.berlin.de/politische-bildung/"
+                        target="_blank">lpb Berlin</a></li>
+                <li>Water of the Future von finep - <a href="https://finep.org/en/" target="_blank">Forum für
+                        internationale Entwicklung
+                        und Planung</a></li>
+                <li>Young Delegates und AK Internationales</li>
+                <li>Heute rot - morgen blau (Jupfis stellen sich vor)</li>
+                <li>Jahresaktion 2022 - Farbfinden - Von Natur aus Bunt</li>
+                <li>Klimaspiel Keep Cool - BAK Ökologie</li>
+                <li>Osterimpuls</li>
+            </ul>
+
+            <p>Abends folgte der Osternachtgottesdienst von Matthias Feldmann.
+                Mit vielen unglaublichen Beiträgen zur Open Stage rundeten die Rover*innen den Abend ab.</p>
+
+            <img src="https://voco.rover.de/wp-content/uploads/sites/14/2022/08/freitag00002.png"
+                class="absolute object-center h-auto m-auto -z-10 -right-120 top-56 w-144 object-fit "></img>
+
+            <img src="https://voco.rover.de/wp-content/uploads/sites/14/2022/08/RV_bubble_hellblau_ohne_relief.png"
+                class="absolute object-center h-auto m-auto -translate-x-5 -top-20 -z-10 -left-80 w-96 object-fit -scale-x-1"></img>
+
+            <img src="https://voco.rover.de/wp-content/uploads/sites/14/2022/08/RV_bubble_rot_ohne_relief.png"
+                class="absolute object-center h-auto m-auto -translate-x-5 top-56 -z-10 -left-96 w-80 object-fit -scale-x-1"></img>
+
+            <img src="https://voco.rover.de/wp-content/uploads/sites/14/2022/08/RV_bubble_hellrot_ohne_relief.png"
+                class="absolute object-center h-auto m-auto -translate-x-8 bottom-20 -z-10 -left-80 w-96 object-fit -scale-x-1"></img>
+
+
+        </div>
+    </div>
+
+    {{render_gallery.render_gallery('samstag', this.attachments.images)}}
+
+    <div class="container flex items-center justify-center py-8 overflow-visible">
+        <div class="relative w-full h-auto prose-sm prose lg:prose-lg">
+            <h1>Der Sonntag</h1>
+
+            <p>Dank einem späteren Osterbrunch blieb sonntags Zeit zum Ausschlafen. Bloß keine Hektik.
+                Ganz allgemein blieb am letzten vollen Lagertag viel Zeit zum Entspannen und Freundschaften vertiefen.
+                Und für alle die mehr wollten gab es ein großes Spielmobil, eine Hüpfburg und einen Menschenkicker.</p>
+
+            <p>Dass das rovervoco nur noch wenige Stunden gehen wird, wurde uns allen spätestens dann bewusst als wir
+                uns abends ein letztes Mal an der Bühne zusammengefunden haben.
+                Wir ließen uns aber von all den warmen Worten und dem Gedanken an die Abreise nicht herunterziehen. Mit
+                <a href="https://www.instagram.com/gapinthecloudsmusic/?hl=de" target="_blank">Gap in the Clouds</a>, <a
+                    href="https://von-nebenan-band.de" target="_blank">Von Nebenan</a> und <a
+                    href="https://www.whotobe.de/" target="_blank">WhoToBe</a>, drei fantastischen Bands, feierten wir
+                das Hier und
+                Jetzt.
+            </p>
+
+            <img src="https://voco.rover.de/wp-content/uploads/sites/14/2022/08/RV_bubble_dunkelgelb_ohne_relief.png"
+                class="absolute object-center h-auto m-auto -translate-x-5 -top-20 -z-10 -left-80 w-80 object-fit -scale-x-1"></img>
+
+
+            <img src="https://voco.rover.de/wp-content/uploads/sites/14/2022/08/projekt00012.png"
+                class="absolute object-center h-auto m-auto -z-10 -right-144 top-24 w-144 object-fit "></img>
+
+
+        </div>
+    </div>
+
+    {{render_gallery.render_gallery('sonntag', this.attachments.images)}}
+
+    <div class="container flex items-center justify-center py-8 overflow-visible">
+        <div class="relative w-full h-auto prose-sm prose lg:prose-lg">
+
+            <h1>Danke</h1>
+
+            <p>rover<strong>voco</strong> war nur dank der unglaublichen ehrenamtlichen Leistung von 150 Helfer:innen
+                möglich. Sie haben die Auftakte organisiert, Essen gekocht und serviert, Schnelltests durchgeführt, Müll
+                sortiert, Sachen geschleppt, aufgebaut, abgebaut, Toiletten und Duschen geputzt, und und und&#8230;
+                Vielen Dank!</p>
+
+            <p>Auch ein großes Dankeschön an die Teams der Kneipen, die uns den ganzen Tag über, aber vor allem Abends,
+                mit tollem Programm, freundlicher Bedienung und leckeren Getränken begeistert haben.</p>
+
+            <p>Vielen Dank an die Schutzhütte, für den Rückzugsraum und die Unterstützung wann immer diese nötig war.
+            </p>
+
+            <p>Wir bedanken uns bei allen Projektpartner*innen und Workshopleiter*innen. Danke für den inhaltlichen
+                Input. </p>
+
+            <p>Vielen Dank an das Ziegeleiparkteam, die immer einen Ausweg wussten und unsere Päckchen angenommen haben.
+            </p>
+
+            <p>Für die spitzenmäßige Begleitung vor, auf und nach dem Lager danken wir auch Marvin und Christina aus dem
+                Bundesamt!</p>
+
+            <p>Vielen Dank auch allen Mitgliedern des Kernteams, die immer an das rovervoco geglaubt haben und viel Zeit
+                und Energie in die Vorbereitung des Lagers gesteckt haben. </p>
+
+
+            <img src="https://voco.rover.de/wp-content/uploads/sites/14/2022/08/RV_bubble_hellrot_ohne_relief.png"
+                class="absolute object-center h-auto m-auto -translate-x-5 -top-20 -z-10 -left-144 w-144 object-fit -scale-x-1"></img>
+
+            <img src="https://voco.rover.de/wp-content/uploads/sites/14/2022/08/RV_bubble_dunkelblau_ohne_relief.png"
+                class="absolute object-center h-auto m-auto top-40 -z-10 -right-144 w-144 object-fit scale-x-1"></img>
+
+
+        </div>
+    </div>
+
+    {{render_gallery.render_gallery('helferinnen', this.attachments.images)}}
+
+
+    <div class="container flex items-center justify-center py-8">
+        <div class="w-full h-auto prose-sm prose lg:prose-lg">
+            <h1>Fazit</h1>
+
+            <p>Die Planung von rover<strong>voco</strong> hatte noch vor der Corona-Pandemie begonnen. Das Ziel: Für so
+                viele Rover*innen wie möglich ein unvergessliches Erlebnis auf die Beine zu stellen. Pfadfinden
+                deutschlandweit erlebbar zu machen und stammesübergreifende Freundschaften zu knüpfen.</p>
+
+            <p>Obwohl Corona und der Krieg Russlands gegen die Ukraine der Planung viele Steine in den Weg geworfen
+                haben, zeigen die Reflexionsergebnisse, dass rover<strong>voco</strong> nicht nur ein unglaublicher
+                Kraftakt aller Beteiligten, sondern vor allem auch ein unvergessliches Erlebnis für viele Rover:innen
+                aus ganz Deutschland war.</p>
+
+            <p>Trotz (oder vielleicht auch dank) Kälte, Käsebrot und Kindl wird das Lager nicht so leicht zu vergessen
+                sein!<sup><a href="#fn2-15228" id="fnr2-15228" title="siehe Fußnote" class="footnote">1</a></sup></p>
+
+            <img src="https://voco.rover.de/wp-content/uploads/sites/14/2022/08/samstag00027.png"
+                class="block w-full h-auto mx-auto"></img>
+
+
+            <ol>
+                <li id="fn2-15228">
+                    <p> Man muss dabei gewesen sein! <a href="#fnr2-15228" title="return to article"
+                            class="reversefootnote">&#8617;&#xFE0E;</a>
+                    </p>
+                </li>
+            </ol>
+
+        </div>
+
+
+    </div>
+
+    <footer class="h-24">
+        <a href="https://dpsg.de/de/impressum" class="text-gray-400" target="_blank">Impressum</a>
+
+    </footer>
+
+    {% endblock %}

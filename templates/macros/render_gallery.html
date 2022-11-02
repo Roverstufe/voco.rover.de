@@ -1,0 +1,36 @@
+{% macro render_gallery(prefix, attach) %}
+<div class="w-full overflow-x-scroll">
+  <ul class="flex flex-col flex-wrap items-center justify-center w-full gap-1 h-80 lg:h-144 pswp-gallery "
+      id="{{prefix}}">
+      
+      {% for image in attach %}
+          {% if image._id.startswith(prefix+"000") %}
+          <a class="w-36 lg:w-80 " href="{{ 'https://voco.rover.de/wp-content/uploads/sites/14/2022/08/' + image._id|url }}" data-pswp-width="{{ image.width }}"
+              data-pswp-height="{{ image.height }}" target="_blank">
+              <img src="{{ 'https://voco.rover.de/wp-content/uploads/sites/14/2022/08/' +image.thumbnail(320)|url }}" alt=""
+                  class="object-cover w-full h-full align-middle"></img>
+          </a>
+
+          {% endif %}
+      {% endfor %}
+      
+      <script type="module">
+        import PhotoSwipeLightbox from 'https://unpkg.com/photoswipe/dist/photoswipe-lightbox.esm.js';
+        import PhotoSwipe from 'https://unpkg.com/photoswipe/dist/photoswipe.esm.js';
+
+        const lightbox = new PhotoSwipeLightbox({
+            gallery: '#{{prefix}}',
+            children: 'a',
+            pswpModule: PhotoSwipe
+        });
+
+        lightbox.init();
+      </script>
+  </ul>
+</div>
+{% endmacro %}
+
+
+
+
+
